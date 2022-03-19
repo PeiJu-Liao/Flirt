@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Acme', sans-serif;
+}
+
+body{
+  padding-top: 50px;
+}
+
+.navbar{
+  background-color: #5c4a72;
+}
+
+.searchTitle{
+  text-shadow: 0 2px 3px gray;
+}
+.footer-end{
+  background-color: #5c4a90;
+}

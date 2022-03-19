@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 引用bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--引用font-awesome-->
+  <script src="https://kit.fontawesome.com/df73c9c2e9.js" crossorigin="anonymous"></script>
+  <!-- 引用內部css -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Flirt-Favorite</title>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class=" container-fluid">
+      <a class="navbar-brand" href="#">Flirt</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./favorite.html">Favorite</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Seaerch Bar -->
+  <div class="container-fluid my-5">
+    <!-- Name List data-panel  -->
+    <div class="data-panel d-flex flex-wrap align-content-between justify-content-center px-5">
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title name-title" id="exampleModalLabel">Jackson Chew</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row">
+            <div class="col-4">
+              <img class="img-thumbnail user-modal-img" src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+            </div>
+            <div class="col-8 userDetails">
+              <p class="mb-1 user-modal-name">Name: Jackson Chew</p>
+              <p class="mb-1 user-modal-age">Age: 25</p>
+              <p class="mb-1 user-modal-birth">Birthday: 1996-05-19</p>
+              <p class="mb-1 user-modal-email">Email: peggy1234567@gamil.com</p>
+              <p class="mb-1 user-modal-region">Region: TW</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 分頁 -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <!-- 引用axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- 引用bootatrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- 引用本身js -->
+  <script src="./favorite.js"></script>
+</body>
+
+</html>
